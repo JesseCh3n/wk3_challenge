@@ -7,22 +7,22 @@ function generatePassword () {
     window.alert("Wrong value! Please start again.")
     return;
   }
-  let condition2 = window.prompt("Please specify if your password shall include lowercase. Enter 'Y' or 'N'");
+  let condition2 = window.prompt("Please confirm your password to include lowercase. Enter 'Y' or 'N'");
   if (condition2 != 'Y' && condition2 != 'N') {
     window.alert("Wrong value! Please start again.")
     return;
   }
-  let condition3 = window.prompt("Please specify if your password shall include uppercase. Enter 'Y' or 'N'");
+  let condition3 = window.prompt("Please confirm your password to include uppercase. Enter 'Y' or 'N'");
   if (condition3 != 'Y' && condition3 != 'N') {
     window.alert("Wrong value! Please start again.")
     return;
   }
-  let condition4 = window.prompt("Please specify if your password shall include numeric type. Enter 'Y' or 'N'");
+  let condition4 = window.prompt("Please confirm your password to include numeric type. Enter 'Y' or 'N'");
   if (condition4 != 'Y' && condition4 != 'N') {
     window.alert("Wrong value! Please start again.")
     return;
   }
-  let condition5 = window.prompt("Please specify if your password shall include special characters. Enter 'Y' or 'N'");
+  let condition5 = window.prompt("Please confirm your password to include special characters. Enter 'Y' or 'N'");
   if (condition5 != 'Y' && condition5 != 'N') {
     window.alert("Wrong value! Please start again.")
     return;
