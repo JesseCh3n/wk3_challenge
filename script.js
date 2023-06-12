@@ -7,26 +7,34 @@ function generatePassword () {
     window.alert("Wrong value! Please start again.")
     return;
   }
+
+  function winAlert (condition) {
+    if (condition != 'Y' && condition != 'N') {
+      window.alert("Wrong value! Please start again.")
+      return true;
+    }
+  }
+
   let condition2 = window.prompt("Please confirm your password to include lowercase. Enter 'Y' or 'N'");
-  if (condition2 != 'Y' && condition2 != 'N') {
-    window.alert("Wrong value! Please start again.")
+  if (winAlert(condition2)) {
     return;
-  }
+  };
+  
   let condition3 = window.prompt("Please confirm your password to include uppercase. Enter 'Y' or 'N'");
-  if (condition3 != 'Y' && condition3 != 'N') {
-    window.alert("Wrong value! Please start again.")
+  if (winAlert(condition3)) {
     return;
-  }
+  };
+  
   let condition4 = window.prompt("Please confirm your password to include numeric type. Enter 'Y' or 'N'");
-  if (condition4 != 'Y' && condition4 != 'N') {
-    window.alert("Wrong value! Please start again.")
+  if (winAlert(condition4)) {
     return;
-  }
+  };
+  
   let condition5 = window.prompt("Please confirm your password to include special characters. Enter 'Y' or 'N'");
-  if (condition5 != 'Y' && condition5 != 'N') {
-    window.alert("Wrong value! Please start again.")
+  if (winAlert(condition5)) {
     return;
-  }
+  };
+
   if (condition2 === 'N' && condition3 === 'N' && condition4 === 'N' && condition5 === 'N') {
     window.alert("You need at least one type of special characters. Please start again.")
     return;
