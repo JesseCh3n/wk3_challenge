@@ -13,10 +13,10 @@ N/A.
 
 This project is built using HTML5 & CSS.
 
-![alt screenshot](https://github.com/JesseCh3n/wk3_challenge/assets/password_generator.jpg)
+![alt screenshot](https://jessech3n.github.io/wk3_challenge/assets/password_generator.jpg)
 
 URL:
-https://github.com/JesseCh3n/wk3_challenge
+https://jessech3n.github.io/wk3_challenge/
 
 ## Credits
 
