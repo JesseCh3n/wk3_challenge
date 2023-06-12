@@ -33,7 +33,10 @@ function generatePassword () {
   }
 
   /* build a string of characters for new password */
-  let character = 'abcdefghijklmnopqrstuvwxyz';
+  let character = ' ';
+  if (condition2 === 'Y') {
+    character += 'abcdefghijklmnopqrstuvwxyz';
+  } 
   if (condition3 === 'Y') {
     character += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   } 
@@ -43,19 +46,12 @@ function generatePassword () {
   if (condition5 === 'Y') {
     character += "\!\"\#\$\%\&\'\(\)\*\+\,\-\.\/\:\;\<\=\>\?\@\[\\\]\^\_\`\{\|\}\~";
   }
-  
-  let newChar = ' ';
-  if (condition2 === 'N') {
-    newChar = character.substring(26);
-  } else {
-    newChar = character;
-  }
 
   /* generate random characters for new password*/
   let result = ' ';
-  const charactersLength = newChar.length;
+  const charactersLength = character.length;
   for ( let i = 0; i < condition1; i++ ) {
-      result += newChar.charAt(Math.floor(Math.random() * charactersLength));
+      result += character.charAt(Math.floor(Math.random() * charactersLength));
   }
 
   return result; 
