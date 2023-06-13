@@ -1,16 +1,18 @@
 // Assignment code here
 function generatePassword () {
   /* specify selection criteria for new password */
+  let errormsg = 'Wrong value! Please start again.'
+
   let temp = window.prompt("Please specify the length of your password. Choose a number between 8 and 128.");
   let condition1 = Number(temp);
   if ((condition1 < 8) || (condition1 > 128) || !(Number.isInteger(condition1))) {
-    window.alert("Wrong value! Please start again.")
+    window.alert(errormsg);
     return;
   }
 
   function winAlert (condition) {
     if (condition != 'Y' && condition != 'N') {
-      window.alert("Wrong value! Please start again.")
+      window.alert(errormsg);
       return true;
     }
   }
