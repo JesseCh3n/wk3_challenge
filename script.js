@@ -38,7 +38,7 @@ function generatePassword () {
   };
 
   if (condition2 === 'N' && condition3 === 'N' && condition4 === 'N' && condition5 === 'N') {
-    window.alert("You need at least one type of special characters. Please start again.")
+    window.alert("You need at least one type of characters. Please start again.")
     return;
   }
 
